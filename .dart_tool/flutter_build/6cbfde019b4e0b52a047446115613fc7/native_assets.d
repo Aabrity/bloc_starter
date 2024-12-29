@@ -1,0 +1,1 @@
+ C:\\Users\\User\ 1\\Desktop\\nayapro\\bloc_starter\\.dart_tool\\flutter_build\\6cbfde019b4e0b52a047446115613fc7\\native_assets.yaml: 
