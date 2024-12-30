@@ -3,11 +3,14 @@ import 'package:bloc_test/cubit/arthmetic_cubit.dart';
 import 'package:bloc_test/cubit/counter_cubit.dart';
 import 'package:bloc_test/cubit/simple_intrest_cubit.dart';
 import 'package:bloc_test/cubit/student_cubit.dart';
-import 'package:bloc_test/cubit/temperature_cubit.dart'; 
+import 'package:bloc_test/cubit/temperature_cubit.dart';
+import 'package:bloc_test/view/Arithemetic_bloc_view.dart'; 
 import 'package:bloc_test/view/area_of_circle_cubit_view.dart';
 import 'package:bloc_test/view/arthmethic_cubit_view.dart';
+import 'package:bloc_test/view/counter_bloc_view.dart';
 import 'package:bloc_test/view/counter_cubit_view.dart';
 import 'package:bloc_test/view/simple_interest_cubit_view.dart';
+import 'package:bloc_test/view/student_bloc_view.dart';
 import 'package:bloc_test/view/student_cubit_view.dart';
 import 'package:bloc_test/view/temperature_cubit_view.dart'; 
 import 'package:flutter/material.dart';
@@ -20,7 +23,7 @@ class DashboardCubit extends Cubit<void> {
     this._simpleInterestCubit,
     this._areaOfCircleCubit,
     this._temperatureCubit, 
-    this._studentCubit,
+    this._studentCubit, 
   ) : super(null);
 
   final CounterCubit _counterCubit;
@@ -99,6 +102,35 @@ class DashboardCubit extends Cubit<void> {
           child: TemperatureCubitView(), 
         ),
       ),
+    );
+  }
+    void openCounterblocView(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => CounterblocView()
+        ),
+      
+    );
+  }
+
+  void openArithmeticblocView(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => ArithmeticBlocView()
+        ),
+      
+    );
+  }
+
+  void openStudentblocView(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => StudentblocView()
+        ),
+      
     );
   }
 }
