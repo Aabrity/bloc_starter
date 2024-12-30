@@ -5,10 +5,7 @@ import 'package:bloc_test/cubit/dashboard_cubit.dart';
 import 'package:bloc_test/cubit/simple_intrest_cubit.dart';
 import 'package:bloc_test/cubit/student_cubit.dart';
 import 'package:bloc_test/cubit/temperature_cubit.dart';
-import 'package:bloc_test/view/Arithemetic_bloc_view.dart';
-import 'package:bloc_test/view/counter_bloc_view.dart';
 import 'package:bloc_test/view/dashboard_view.dart';
-import 'package:bloc_test/view/student_bloc_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
